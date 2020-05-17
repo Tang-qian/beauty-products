@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+	p{
+			text-indent:2em;
+			margin-left:20px;
+			font-size:20px;
+			line-height: 40px;
+			}
+	h2{font-size:29px;text-align: center;}
+	h3{font-size:24px;}
+	/*内容页main底框设置*/  
+	.main{
+		position: relative;
+		top:80px;
+		background:#ffb2b5;
+		width:1300px;
+		margin:0 auto;
+	}
+	/*基础图片大小设置*/
+	.img{
+		width:35%;
+		height:30%;
+	} 
+	/*第一栏板块布局*/   
+	.first-container{
+		width:1100px;
+		display:flex;
+		justify-content:space-around;
+		margin:0 auto;
+		background: rgba(254,254,254,0.8)
+	}
+	/*第一栏文字布局*/
+	.first-container div{
+		padding:20px 30px;
+		position: relative;
+		width:800px;
+	}
+	/*第二栏板块布局*/
+	.second-container{
+		width:1100px;
+		display:flex;
+		justify-content:center;
+		padding: 100px 100px;
+	}
+	/*第二栏文字布局*/
+	.second-container div{
+		position: relative;
+		margin:10px 50px 0px;
+		width:500px;
+	}
+	/*第三栏板块布局*/
+	.third-container{
+		display:inline-flex;
+		align-content: center;
+		
+		background: rgba(254,151,120,0.60);
+		border-radius: 60px;
+	}
+	/*第三栏文字板块*/
+	.third-container div{
+		position: relative;
+		padding:10px 50px;
+	}
+	/*第四栏板块布局*/
+	.fourth-container{
+		display:flex;
+		align-content: center;
+		margin-top: 110px;
+	}
+	/*第四栏文字板块*/
+	.fourth-container div{
+		position: relative;
+		width:1100px;
+		padding: 90px 80px;
+		
+	}
+	/*第五栏板块布局*/
+	.fifth-container{
+		display:inline-flex;
+		align-content: center;
+		margin-top: 100px;
+		margin-bottom: 50px;
+		background: rgba(255,255,255,0.94);
+		border-radius: 60px;
+	}
+	/*第五栏文字布局*/
+	.fifth-container div{
+		padding:10px 60px;
+		width:500px;
+	}
+	footer p{font-size:17px;
+		line-height: 21px;
+		position: relative;
+		padding: 80px 0px 3px;
+}

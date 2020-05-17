@@ -1,0 +1,94 @@
+@charset "utf-8";
+	/* CSS Document */
+		/*平滑回到顶部*/
+		html{scroll-behavior: smooth;}
+
+		/*网页标题或logo、、用后代选择器，空格相隔，选择h1的子元素a*/
+		h1 a{
+			text-decoration: none;/*清除默认样式——下划线*/
+			color:#F773B2;
+			}
+
+		/*网页头部，含标题、搜索、导航的宽度*/
+		h1{
+			color:#F773B2;
+			font-family:"STHupo";
+			font-size:35px;
+			margin-bottom:50px;
+			}
+		
+		header{
+				width:1300px;
+				margin: 0 auto;
+				}
+		body{
+			background:#faf1e0;
+			}
+
+		/*以下设置导航*/
+		/*导航样式引用首页css*/
+		/*导航群结束*/
+
+		h2{
+			text-align: center;
+			color:#ff8aad;
+			margin-top:70px;
+			}
+
+		/*以下设置主体部分*/
+		.page{
+				width:1300px;
+				margin:0 auto;
+				display:flex;/*设置弹性盒子，伸缩项目从左到右分布*/
+				flex-flow:column;/*设置伸缩项目从上至下分布*/
+				}
+		/*设置版块大标题*/
+		h3{
+			font-size:25px;
+			text-align: center;
+			}
+		.title{
+				font-size:20px;
+				font-weight: bold;
+				margin-left:300px;
+				}
+		.block{
+				position:relative;height: 450px;
+				width:1100px;margin:0 auto;
+				border:10px white solid;
+				border-top-left-radius:7em;
+				border-bottom-right-radius:7em;
+			}
+		.text{
+			text-indent:2em; 
+			margin-left:20px;
+			font-size:20px;
+			width:600px;
+			line-height: 50px;
+			}
+		.picture{
+				position:absolute;
+				right:5em;float:none;
+				top:80px;
+				border:5px white solid;
+				}
+		.one{
+			background:#fea19a ;
+			margin-bottom: 0;
+			}
+		.two{
+			background: #cbbae4;
+			}
+		.three{
+				background:#fc8790;
+				}
+		.four{
+			background: #fe9778;
+			}
+		footer{
+				top: 50px;
+				position:relative;
+				text-align: center;
+				}
+/*底部栏设置*/	
+		.up{float:right;}

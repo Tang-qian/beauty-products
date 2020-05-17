@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+		/*搜索栏板块*/	
+		.search-box {
+					background: white;
+					height: 18px;
+					border-radius: 30px;
+					padding: 9px;
+					display:flex;
+					width:220px;
+					margin-left:580px;
+					margin-top: -18px;
+					
+					}
+		/*输入框设置*/
+		.search-btn {
+					margin-top:-7px;
+					width:50px;
+					height: 10px;
+					border-radius: 50%;
+					background:white;
+					display:inline-flex;
+					justify-content: center;
+					}
+		/*搜索栏输入字体设置*/
+		.search-txt {
+					border: none;
+					background: none;
+					outline: none;
+					float: left;
+					color:#333;
+					font-size: 16px;
+					}
+		/*搜索图标大小*/
+		.icon{
+				width:20px;
+				height:20px;
+				}
+		
+		/*以下设置导航*/
+			.navbar{
+				position: absolute;
+				display:inline-flex;
+				z-index: 9999;
+				width:1300px;
+				justify-content: flex-end;
+				height: 0px;
+				top:60px;/**相对于父元素header定位,显示上是离标题的距离*/	
+				}
+
+			.navbar ul{
+						list-style:none;/*清除nav链接的默认样式——点没有了*/
+						font-size:20pX;
+						}
+			.navbar ul li{
+						color:#333;
+						display:inline-block;
+						padding:1rem;
+						position:relative;/*为父级添加相对#定位*/
+						}
+			.navbar ul li a{
+							color:#333;
+							text-decoration: none;/*清除默认样式——下划线*/
+							}
+
+			.navbar ul li ul{display:none;}/*隐藏嵌套*/
+			.navbar ul li:hover{
+								color:white;
+								animation:changeColor 2s infinite;
+								height:15px;
+								text-align:center;
+								}
+			/*设置移动上去时三种变化颜色*/
+			@keyframes changeColor{
+									0%{background:#dac6e1;}
+									50%{background:#c38e9e;}
+									100%{background:#fd7d36;}
+									}
+			.navbar ul li:hover ul{
+									display:block;
+									position:absolute;/*对于li父元素（眉部等）定位*/
+									left:0;/*菜单内容整体框距离链接左边距离*/
+									top:48px;
+									}
+
+			.navbar ul li:hover ul li{
+									display:block;/*拉菜单内容从上到下时*/
+									color:white;
+									width:70px;
+									background:#f8cdd6;/*当移动到ul的下拉菜单时*/
+									z-index: 20;
+									}
+
+			.navbar ul li a:hover{color:white;}/*移动到ul-li下的链接时的颜色，即移动到首页的颜色*/
+			/*导航群结束*/
+			

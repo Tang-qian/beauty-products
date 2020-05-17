@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>平价美妆安利网-首页</title>
+		<link rel="stylesheet" href="css/index-style.css">
+	</head>
+
+<body>
+	<!--span 和a.img配合使用，这只是个空盒子，为了回到顶部链接定位-->
+	<span id="gotop"> </span>
+	<!--头部开始，含网站名称、搜索框、导航、-->
+	<header>
+		<h1><a href="index.html">平价美妆安利网</a></h1>
+		<!--搜索框-->
+		<div class="search-box">
+			<input class="search-txt" type="search" name="search" placeholder="输入你要查找的内容"/>
+				<img src="img/index.img/search.png" class="icon" alt="搜索框底框"/>
+		</div>
+		<!--导航栏-->
+		<nav class="navbar">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="other-html-files/skin-care-page.html">护肤</a></li>
+				<li><a href="other-html-files/cosmetics-page.html">美妆</a></li>
+				<li><a href="other-html-files/body-care-page.html">美体</a>
+					<ul>
+						<li><a href="other-html-files/body-care-page.html">香水</a></li>
+						<li class="gray">美甲</li>
+						
+					</ul>
+				</li>
+				<li><a href="other-html-files/tool-page.html">工具</a>
+					<ul>
+						<li><a href="other-html-files/tool-page.html">刷子</a></li>
+						<li class="gray">睫毛夹</li>
+						<li class="gray">化妆镜</li>
+					</ul>
+				</li>
+				<li><a href="other-html-files/login.html">登录</a></li>
+			</ul>
+		</nav>
+	</header>
+		<!-- === 轮播图片 === -->
+		<div class="slidershow middle">
+			<div class="slides"><!--定义幻灯片板块-->	
+				<input type="radio" name="r" id="r1" checked /><!--checked和type="radio"配合使用-->
+				<input type="radio" name="r" id="r2" />
+				<input type="radio" name="r" id="r3" />
+
+				<div class="slide s1">
+					<img src="img/index.img/perfume12.jpg" alt="" />
+				</div>
+
+				<div class="slide">
+					<img src="img/index.img/perfume8.jpg" alt="" />
+				</div>
+
+				<div class="slide">
+					<img src="img/index.img/perfume13.jpg" alt="" />
+				</div>
+			</div><!--div为sides（幻灯片总和结束）-->
+			
+			<!--设置导航-->
+			<div class="navigaion">
+				<label for="r1" class="bar"></label><!--"for"属性可把label绑定到另外一个元素,点击label聚焦选中for的id上-->
+				<label for="r2" class="bar"></label><!--请把 "for" 属性的值设置为相关元素的 id 属性的值。 -->
+				<label for="r3" class="bar"></label>
+			</div>
+		</div><!--div为slidershow middle，幻灯片轮播板块结束-->
+	
+	
+	<!--中间主体部分-->
+	<main><!--定义中间主体部分-->
+
+		<!--第一背景色块开始-->
+		<div class="first-color">
+			<!--图文板块1-->
+			<div class="block"><!--定义含有图文的板块样式-->
+				<p class="title">自然之名酵母水</p>
+				<p class="text">唤醒国潮，艺术无界。<br>2020年潮流新色Neo-mint薄荷绿包装的酵母水<br>可谓是颜值与实力并兼<br>石斛花的原料，高效保湿，带来肌肤水光莹润。<br>200ml——$400</p>
+				<img src="img/index.img/toner.jpg" class="picture" alt="自然之名产品照" width="300" height="300">
+			</div>	
+			
+			<!--图文板块2-->
+			<div class="block">
+				<p class="title">Dr.Althea艾西儿医生壳聚糖水乳</p>
+				<p class="text">始于颜值，终于品质<br>精美的外包装再加上好用的功效，吃下这颗安利<br>含有DNA修复科技成分“壳聚糖”，<br>保湿效果是一般保湿成分的3~5倍</p>
+				<img src="img/index.img/Dr.Althea.jpg" alt="艾西儿" class="picture" width="300" height="300">
+			</div>	
+		</div><!--第一背景色块结束-->
+		
+		<!--第二背景色块开始-->
+		<div class="second-color">
+			<!--图文板块3-->
+			<div class="block">
+				<p class="title">HEDONE电话眼影盘</p>
+				<p class="text">童话里的复古电话机，成年后的电眼制造机,<br>小巧精美的包装，捕捉你的少女心<br>四色搭配，简单实用，细腻微光，还可以防水防汗。</p>
+				<img src="img/index.img/HEDONE.jpg" class="picture" alt="HEDONE电话眼影盘" width="300" height="300">
+			</div>
+			
+			<!--图文板块4-->
+			<div class="block">
+				<p class="title">colourpop sweet talk（珊瑚盘）</p>
+				<p class="text">非常流行的珊瑚盘，每一个亮片色都很实用<br><br>整体配色非常少女，珠光和哑光搭配协调。</p>
+				<img src="img/index.img/colourpop.jpg" class="picture" alt="colourpop眼影盘" width="300" height="300">
+			</div>
+			
+			<!--图文板块5-->
+			<div class="block">
+				<p class="title">canmake 花瓣五色腮红 </p>
+				<p class="text">五色花瓣设计，刷出元气美颊。<br>立体雕刻，附赠柔软刷头，<br>甜美梦幻的包装,直击仙女们的少女心</p>
+				<img src="img/index.img/canmake.jpg" class="picture" alt="canmake 腮红" width="300" height="300">
+			</div><!--图文版块5结束-->
+		</div><!--第二背景色块结束-->
+		
+		<!--第一背景色块开始-->
+		<div class="first-color">
+			<div class="block"><!--图文板块6-->
+				<p class="title">亚菲儿 唯爱女士香水</p>
+				<p class="text">纵入光影，遇见挚美，第一秒，就让人惊艳<br><br>美丽人生，有你就是幸福。</p>
+				<img src="img/index.img/perfume.jpg" class="picture" alt="香水" width="300" height="300">
+			</div><!--图文版块6结束-->
+		</div>
+	</main>
+	
+	<footer>
+		<div>
+		<p> Copyright &copy;版权归平价美妆安利网<br>欢迎通过邮箱
+		  	<a href="malito:1340551381@qq.com">1340551381@qq.com</a>联系我们！
+		</p>
+		</div>
+	</footer>
+	<!--回到顶部图标链接-->
+	<a href="#gotop">
+		<img src="img/index.img/up.png" class="up" alt="图标" width="50" height="80" >
+	</a>
+</body>
+</html>
